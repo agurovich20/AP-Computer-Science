@@ -1,0 +1,15 @@
+Scheme:
+
+(define hello (lambda ()
+  "Hello World"))
+
+Netlogo:
+
+to greet 
+  print "Hello World"
+end
+
+Python:
+
+def helloWorld:
+  print("Hello World")
