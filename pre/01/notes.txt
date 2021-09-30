@@ -1,0 +1,4 @@
+public double force(double g, double m1, double m2, double r){
+  return(g*m1*m2/Math.pow(r, 2));
+}
+
