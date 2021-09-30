@@ -1,0 +1,9 @@
+public double sumOfSines(double t){
+  double pi = Math.PI;
+  double doubleTheta = 2*t*pi/180;
+  double tripleTheta = 3*t*pi/180;
+  double doubleSin = Math.sin(doubleTheta);
+  double tripleSin = Math.sin(tripleTheta);
+  double sum = doubleSin+tripleSin;
+  return(((double) Math.round(sum*1000))/1000);
+}
