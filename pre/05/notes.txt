@@ -1,0 +1,9 @@
+public String stringTimes(String str, int n) {
+  String update = "";
+  while (0<n) {
+    n-=1;
+    update += str;
+}
+  return(update);
+}
+
