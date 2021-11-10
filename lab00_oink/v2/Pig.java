@@ -12,8 +12,8 @@
  ***/
  
  /**
- New in v1
- - Implemented the functions hasPunc() and isUpperCase()
+ New in v2
+ - 
  **/
 
 
@@ -145,9 +145,10 @@ public class Pig {
 
     String ans = "";
 
-    if ( beginsWithVowel(w) )
+    if ( beginsWithVowel(w) ){
+    
       ans = w + "way";
-
+    }
     else {
       int vPos = w.indexOf( firstVowel(w) );
       ans = w.substring(vPos) + w.substring(0,vPos) + "ay";
@@ -208,6 +209,8 @@ public class Pig {
         
 	    return isUpperCase(w.substring(0,1) );
     }
+    
+  
     
 
   public static void main( String[] args ) {
