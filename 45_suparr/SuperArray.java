@@ -1,21 +1,16 @@
-// Clyde "Thluffy" Sinclair
-// APCS1 pd0
-// HW44 -- expanding SuperArray functionality, encapsulation
-// 2021-12-08w
-// Ari Gurovich
-/***************************
- * class SuperArray version 2.0
- * (SKELETON)
- * Wrapper class for array. Facilitates
- * resizing
- * expansion
- * read/write capability on elements
- * adding an element to end of array
- * adding an element at specified index
- * removing an element at specified index
- ***************************/
+// Ari Gurovich -- Consonants -- Oscar, Eric
+// APCS pd8
+// HW45 -- Array of Titanium -- Using abstract methods and implementing interfaces.
+// 2021-12-9
 
-public class SuperArray
+/*
+DISCO: the methods dont change.
+	error about SuperArray not being Abstract but it went away on its own.
+QCC: what sthe point of ListInt?
+     How do we test it?
+*/
+
+public class SuperArray implements ListInt
 {
 
   private int[] _data;  //underlying ("encapsulated") container
@@ -73,23 +68,24 @@ public class SuperArray
 
 
   //adds an item after the last item
-  public void add( int newVal )
+  public boolean add( int newVal )
   {
 int i = _size;
 _data[i] = newVal;
 _size += 1;
-  }
+return true;
+}
 
 
   //inserts an item at index
-  public void add( int index, int newVal )
+  public boolean add( int index, int newVal )
   {
     for (int i = index + 1; i < _size; i++){
     _data[i] = _data[(i-1)];
     }
     _size = _size + 1;
     _data[index] = newVal;
-
+return true;
   }
 
 
@@ -156,7 +152,11 @@ _size += 1;
       mayfield.add(1,77);
       System.out.println("Printing SuperArray mayfield post-insert...");
       System.out.println(mayfield);
-     
+// Doesnt work   
+//   mayfield.ListInt.add(3,22);
+ //  System.out.println(mayfield);
+//   ListInt.add.(mayfiedl);
+ //  mayfield.add();
   }//end main()
 
 

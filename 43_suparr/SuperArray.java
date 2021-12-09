@@ -1,4 +1,4 @@
-// Oscar Breen Consonants Ari, Eric
+// Ari Gurovich Consonants Oscar, Eric
 // APCS pd8
 // HW43 -- encapsulation (basic SuperArray functionality)
 // 2021-12-07

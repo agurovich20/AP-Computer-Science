@@ -1,4 +1,4 @@
-/*Oscar Breen -- Consonants -- Ari, Eric
+/*Ari Gurovich -- Consonants -- Oscar, Eric
 APCS
 HW41 -- Be More Rational -- Code that deals with rational numbers, lots of instances lots of use of
       pre-created default constructor ints
