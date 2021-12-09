@@ -1,4 +1,4 @@
-/*Oscar Breen -- Consonants -- Ari, Eric
+/*Ari Gurovich- Consonants -- Oscar, Eric
 APCS
 HW41 -- Be Rational -- Code that deasl with rational numbers
 2021-12-1
