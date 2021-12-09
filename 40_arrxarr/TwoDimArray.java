@@ -4,7 +4,7 @@
  * practice working with 2D arrays
  ******************************/
 /*
-Oscar Breen - Team 10 Consonants, Ari, Eric
+Ari Gurovich - Team 10 Consonants, Oscar, Eric
 APCS
 HW40 -- Demand A Raise -- filling skeleton 
 2021-11-30
