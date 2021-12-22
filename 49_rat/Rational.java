@@ -7,7 +7,7 @@ time spent: 1,5
 DISCO -- I dont think anything
 QCC  -- still dont know if theres a way to bypass creating new instances for each test case
 */
-public class Rational {
+public class Rational implements Comparable{
  private static int denominator;
  private static int numerator;
 
@@ -72,18 +72,7 @@ numerator = numerator + numnums.numerator;
 }
 
 public static int compareTo(Rational numnums){
-if(floatValue(numerator , denominator) < floatValue(numnums.numerator , numnums.denominator)){
-	if ( floatValue(numerator , denominator) == (floatValue(numnums.numerator , numnums.denominator))){
-	return 0;
-	}
-	else{
-	return 1;
-	}
-}
-else{
-return -1;
-
-}
+	return compareTo(Object x);
 }
 public static void main(String [] args){
 Rational r = new Rational(1 , 5);
@@ -112,7 +101,7 @@ r3.reduce();
 System.out.println("reduce test " + r3.toString());
 Rational r4 = new Rational (10 , 60);
 Rational s4 = new Rational ( 4 , 5);
-System.out.println("compare test "+ r4.compareTo(s4));
+System.out.println("compare test "+ r4.compareTo());
 r4.subtract(s4);
 System.out.println("subtraction test "+ r4.floatValue(numerator , denominator));
 
