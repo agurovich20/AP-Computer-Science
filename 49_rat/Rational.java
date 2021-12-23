@@ -72,7 +72,7 @@ numerator = numerator + numnums.numerator;
 }
 
 public static int compareTo(Rational numnums){
-	return compareTo(Object x);
+	return compareTo();
 }
 public static void main(String [] args){
 Rational r = new Rational(1 , 5);
