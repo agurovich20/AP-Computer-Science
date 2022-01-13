@@ -28,7 +28,7 @@ public class Magpie2
 	 *            the user statement
 	 * @return a response based on the rules given
 	 */
-	public String getResponse(String statement)
+public String getResponse(String statement)
 	{
 		String response = "";
 		if (statement.indexOf(" no ") >= 0) 
@@ -47,10 +47,10 @@ public class Magpie2
 				|| statement.indexOf("cat") >= 0
 				|| statement.indexOf("fish") >= 0
 				|| statement.indexOf("bird") >= 0
-				|| statement.indexOf("pets") >= 0)
+				|| statement.indexOf("pets") >= 0
                                 || statement.indexOf("cats") >= 0
                                 || statement.indexOf("fishes") >= 0
-                                || statement.indexOf("birds") >= 0
+                                || statement.indexOf("birds") >= 0)
 		{
 			response = "Tell me more about your pets?";
 		}
@@ -58,9 +58,31 @@ public class Magpie2
                 {
                         response = "He sounds like a good teacher.";
                 }
-		else if (statement.length() < 1)
+		else if ((statement.trim()).length() < 1)
                 {
                         response = "Say something please.";
+                }
+                else if (statement.indexOf("mother") >= 0
+                                || statement.indexOf("father") >= 0
+                                || statement.indexOf("sister") >= 0
+                                || statement.indexOf("brother") >= 0)
+ 		{
+			response = "Tell me more about your family";
+		}
+		else if ( statement.indexOf("cool") >=0
+                                || statement.indexOf("like") >= 0
+                                || statement.indexOf("better than") >= 0
+                                || statement.indexOf("awesome") >= 0)
+                {
+			response = "facts bro";
+		}
+                else if ( statement.indexOf("meaning") >=0
+                                || statement.indexOf("of life") >= 0
+                                || statement.indexOf("confusing") >= 0
+                                || statement.indexOf("emotions") >= 0)
+
+                {
+                        response = "stop trying to Turing test me";
                 }
 
 		else
@@ -69,6 +91,7 @@ public class Magpie2
 		}
 		return response;
 	}
+
 
 	/**
 	 * Pick a default response to use if nothing else fits.
